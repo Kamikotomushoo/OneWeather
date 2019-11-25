@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>OneWeather</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="..//css/CSSReset.css">
+        <link rel="stylesheet" href="../css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lexend+Tera&display=swap" rel="stylesheet"> 
+       
+        <script src="../js/sender.js"></script>
+    </head>
+    <body onload="clearAll()">
+        <header>
+            <div id="divHeader" >
+              <div id="headerText">
+                  <strong id="textOne">ONE</strong><strong id="textWeather">WEATHER</strong>
+                </div>  
+            </div>
+        </header>
+        <form action="" id="mainForm">
+            <input type="text" name="CityField" id="cityField" class="filed" placeholder="Lviv"><br>
+            <input type="button" value="Search" class="buttonOfForm" onclick="sendRequest()">
+            <input type="reset" value="Clear" class="buttonOfForm" onclick="clearAll()">
+        </form>
+        <div id="mainContent" style="align-content: center;">
+            <div id="mainText">
+                <!-- Here we have Name of city and temperature-->
+            </div>
+            <div id="details" >
+                <!-- Here we have details-->
+            </div>
+        </div>
+ 
+
+
+    </body> 
+</html>
